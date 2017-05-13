@@ -1,0 +1,71 @@
+body {
+    background-color: #515151;
+    font-size: 15px;
+    font-family: Roboto;
+}
+
+p {
+    margin: 0px;
+}
+
+section {
+    margin-bottom: 8px;
+}
+
+.btn-primary {
+    background-color: #616161;
+    border-color: #313131;
+}
+
+.btn-primary {
+    background-color: #616161;
+    border-color: #313131;
+}
+
+.back-button {
+    margin-bottom: 16px;
+}
+
+.app {
+    padding-top: 16px;
+}
+
+.copyright {
+    color: #888888;
+    font-size: 0.75em;
+}
+
+.title {
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+.solved-japanese {
+    color: #00B4FF;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.solution-romaji {
+    color: #BBBBBB;
+    font-size: 0.70em;
+}
+
+.solution-english {
+    color: #FFFFFF;
+    font-size: 0.8em;
+}
+
+.not-solved {
+    color: #EEEEEE;
+    font-size: 1em;
+}
+
+.input {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.error-input {
+    background-color: #FFDDDD;
+}
