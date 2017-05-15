@@ -1,38 +1,30 @@
 import React from 'react'
-import {storeContext, connectWithTaskState} from '../../utils'
+import {storeContext} from '../../utils'
 import {push} from 'react-router-redux'
 
 class HomeView extends React.Component {
 
-  render = () => {
-    const stories = this.props.task.stories
-    return (
-      <div>
-        {Object.keys(stories).map((story, index) => (
-          <button key={index} className="btn btn-primary btn-lg btn-block" onClick={this.onClick(story)}>
-            <div className="col-xs-9">
-              <p className="solved-japanese">{ stories[story].title.formattedJapanese }</p>
-              <p className="solution-english">{ stories[story].title.english }</p>
-            </div>
-            <div className="col-xs-3">
-              <p className="solution-romaji">
-                { (stories[story].solvedLines.length * 100 / (stories[story].solvedLines.length + stories[story].unsolvedLines.length)).toFixed(0) + ' %' }
-              </p>
-            </div>
-          </button>
-        ))}
-      </div>
-    )
-  }
+  render = () => (
+    <div>
+      <section className="welcome-title">Welcome to FluentKana</section>
+      <section className="welcome-text">FluentKana is a tool that helps to improve your Hiragana reading skills through various Japanese folk tales.
+        It assumes that you already know the Hiragana alphabet, but you're not able to use it unconsciously.
+      </section>
+      <section className="welcome-text">It's easy. Just type the Romajis for the Hiraganas. Once you type the entire line
+        you'll be rewarded with the meaning of the current line and the next new line to solve.
+      </section>
+      <section className="welcome-text">I hope you find it useful.</section>
+      <section className="welcome-lets-start" onClick={ this.onToStories }>Let's start!</section>
+    </div>
+  )
 
-  onClick = (story) => () => {
-    this.context.store.dispatch(push('/stories/' + story))
+  onToStories = () => {
+    this.context.store.dispatch(push('/stories/'))
   }
 
   static contextTypes = storeContext
 }
 
 export default ({
-  path: 'home',
-  component: connectWithTaskState(HomeView),
+  component: HomeView,
 })

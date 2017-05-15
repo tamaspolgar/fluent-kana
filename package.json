@@ -2,6 +2,7 @@
   "name": "kana-fun",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.loopinvariant.com/fluent-kana",
   "dependencies": {
     "prop-types": "^15.5.8",
     "query-string": "^4.3.4",

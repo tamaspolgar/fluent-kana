@@ -1,6 +1,6 @@
 export default {
   "copyright": {
-    "text": "Translation by Tom Ray and Sachiko Matsubara",
+    "text": "Translation by Tom Ray and Atsushi Shimojima",
     "url": "http://life.ou.edu/stories/sarukani.html"
   },
   "lines": [

@@ -1,5 +1,4 @@
 import React from 'react'
-import Settings from './components/Settings'
 
 class CoreLayout extends React.Component {
 
@@ -10,9 +9,6 @@ class CoreLayout extends React.Component {
 
   render = () => (
     <div className="container app">
-      <div>
-        <Settings />
-      </div>
       <div>
         {this.props.children}
       </div>

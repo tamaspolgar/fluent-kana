@@ -1,13 +1,13 @@
 import React from 'react'
 import {Provider} from 'react-redux'
-import {browserHistory, Router} from 'react-router'
+import {hashHistory, Router} from 'react-router'
 import {syncHistoryWithStore} from 'react-router-redux'
 
 class AppContainer extends React.Component {
 
   render() {
     const {routes, store} = this.props
-    const history = syncHistoryWithStore(browserHistory, store)
+    const history = syncHistoryWithStore(hashHistory, store)
 
     return (
       <Provider store={store}>

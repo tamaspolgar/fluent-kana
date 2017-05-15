@@ -1,71 +1,129 @@
+/* color palette:
+ http://www.colourlovers.com/palette/1/metro
+ #515151 (background)
+
+ #FFFFFF
+ #00B4FF
+ #EEEEEE
+
+*/
 body {
     background-color: #515151;
-    font-size: 15px;
     font-family: Roboto;
 }
 
-p {
-    margin: 0px;
+.welcome-title {
+    font-size: 1.25em;
+    font-weight: 300;
+    padding-bottom: 1em;
+    color: #EEEEEE;
 }
 
-section {
-    margin-bottom: 8px;
+.welcome-text {
+    color: #EEEEEE;
+    font-size: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    font-weight: 200;
 }
 
-.btn-primary {
-    background-color: #616161;
-    border-color: #313131;
-}
-
-.btn-primary {
-    background-color: #616161;
-    border-color: #313131;
-}
-
-.back-button {
-    margin-bottom: 16px;
+.welcome-lets-start {
+    color: #00B4FF;
+    font-size: 1.25em;
+    font-weight: 300;
+    padding-top: 1em;
 }
 
 .app {
-    padding-top: 16px;
+    padding-top: 1.5em;
 }
 
-.copyright {
-    color: #888888;
-    font-size: 0.75em;
+.breadcrumbs {
+    font-size: 1.25em;
+    font-weight: 200;
+    padding-bottom: 1em;
+}
+
+.breadcrumbs .parent {
+    color: #00B4FF;
+}
+
+.breadcrumbs .slash {
+    color: #BBBBBB;
+}
+
+.breadcrumbs .current {
+    color: #BBBBBB;
+}
+
+.story-button {
+    display: grid;
+    font-size: 1.35em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin-bottom: 0.7em;
+    margin-right: 0.5em;
+    background-color: #494949;
+}
+
+.solved-line {
+    display: grid;
 }
 
 .title {
-    font-size: 24px;
-    padding-bottom: 16px;
+    font-size: 1.35em;
+    padding-bottom: 1em;
 }
 
-.solved-japanese {
+.normal {
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+.japanese {
     color: #00B4FF;
-    font-weight: 400;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: 100;
 }
 
-.solution-romaji {
-    color: #BBBBBB;
-    font-size: 0.70em;
-}
-
-.solution-english {
-    color: #FFFFFF;
-    font-size: 0.8em;
-}
-
-.not-solved {
+.romaji {
     color: #EEEEEE;
-    font-size: 1em;
+    font-weight: 200;
+    font-size: 0.85em;
+}
+
+.english {
+    color: #EEEEEE;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.solved-prefix {
+    color: #00B4FF;
+    font-size: 1.1em;
+}
+
+.unsolved-suffix {
+    color: #FFFFFF;
+    font-size: 1.1em;
 }
 
 .input {
-    margin-top: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 .error-input {
     background-color: #FFDDDD;
+}
+
+.the-end {
+    font-size: 1.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.75em;
+}
+
+.copyright {
+    color: #888888;
+    font-size: 0.7em;
+    padding-bottom: 0.7em;
 }

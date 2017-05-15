@@ -1,5 +1,5 @@
 import {applyMiddleware, combineReducers, createStore} from 'redux'
-import {browserHistory} from 'react-router'
+import {hashHistory} from 'react-router'
 import {routerMiddleware, routerReducer} from 'react-router-redux'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import taskReducer from '../reducers/task'
@@ -12,7 +12,7 @@ export default createStore(
   }),
   composeWithDevTools(
     applyMiddleware(
-      routerMiddleware(browserHistory),
+      routerMiddleware(hashHistory),
       persistentMiddleware
     )
   ),
