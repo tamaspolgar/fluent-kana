@@ -101,11 +101,13 @@ body {
 .solved-prefix {
     color: #00B4FF;
     font-size: 1.1em;
+    font-weight: 100;
 }
 
 .unsolved-suffix {
     color: #FFFFFF;
     font-size: 1.1em;
+    font-weight: 100;
 }
 
 .input {
